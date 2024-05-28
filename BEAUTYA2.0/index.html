@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,700;1,100&family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,300;1,100&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
+        rel="stylesheet">
+    <title>Beautya</title>
+    <script src="interativo.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">BEAUTYA</a>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Lançamentos</a></li>
+            <li><a href="#">Perfumaria</a></li>
+            <li><a href="#">Make</a></li>
+            <li><a href="#">Cabelos</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Presentes</a></li>
+        </ul>
+        <button id="login-btn">Login</button>
+    </header>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="login-form">
+                <label for="username">Usuário:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="senha" name="senha" minlength="6" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <div id="error-message"></div>
+        </div>
+    </div>
+
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/carrossel1.png" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/carrossel2.png" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/carrossel3.png" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/carrossel4.png" alt="Image 4">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="texto__topicos">Destaques:</h2>
+        <section id="destaques">
+            <div class="produto">
+                <img src="img/perfumaria.png" alt="Produto 1">
+                <h3 class="prod__texto">Perfumaria</h3>
+                <button class="botao3">Ver</button>
+            </div>
+            <div class="produto">
+                <img src="img/maquiagem.png" alt="Produto 2">
+                <h3 class="prod__texto">Maquiagens</h3>
+                <button class="botao3">Ver</button>
+            </div>
+            <div class="produto">
+                <img src="img/pele.png" alt="Produto 3">
+                <h3 class="prod__texto">Pele</h3>
+                <button class="botao3">Ver</button>
+            </div>
+    </div>
+
+    <div class="imagem__painel__segundo"><img src="img/painel2 (2).png" class="imagem__painel__segundo2"></div>
+
+    <main class="container">
+
+        <h2 class="texto__topicos">Nossos mais vendidos:</h2>
+        <section id="destaques">
+            <div class="produto">
+                <img src="img/produto1.jpg" alt="Produto 1">
+                <h3 class="prod__texto">Beauty Pie</h3>
+                <p class="prod__texto">R$ 79,99</p>
+                <button class="botao">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="img/produto2.png" alt="Produto 2">
+                <h3 class="prod__texto">Beauty Acid</h3>
+                <p class="prod__texto">R$ 79,99</p>
+                <button class="botao">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="img/produto3.jpg" alt="Produto 3">
+                <h3 class="prod__texto">Beauty Paleta</h3>
+                <p class="prod__texto">R$ 79,99</p>
+                <button class="botao">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="img/produto4.jpg" alt="Produto 4">
+                <h3 class="prod__texto">Beauty Ilumina</h3>
+                <p class="prod__texto">R$ 79,99</p>
+                <button class="botao">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="img/produto5.jpg" alt="Produto 5">
+                <h3 class="prod__texto">Beauty Lips</h3>
+                <p class="prod__texto">R$ 79,99</p>
+                <button class="botao">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="img/produto6.jpg" alt="Produto 6">
+                <h3 class="prod__texto">Beauty Pincél</h3>
+                <p class="prod__texto">R$ 79,99</p>
+                <button class="botao">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="img/produto7.jpg" alt="Produto 7">
+                <h3 class="prod__texto">Beauty Creme</h3>
+                <p class="prod__texto">R$ 79,99</p>
+                <button class="botao">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="img/produto8.jpg" alt="Produto 8">
+                <h3 class="prod__texto">Beauty esponja</h3>
+                <p class="prod__texto">R$ 79,99</p>
+                <button class="botao">Comprar</button>
+            </div>
+
+        </section>
+        <div><img src="img/skin type.png " class="imagem__painel2"></div>
+
+        <div class="interactive-container">
+            <p class="hover-text">Conheça mais produtos!</p>
+            <div class="image-container"></div>
+        </div>
+
+    </main>
+    <div class="container">
+        <h2 class="texto__topicos">Saiba mais:</h2>
+        <section id="destaques">
+            <div class="produto">
+                <img src="img/blog image.png" alt="Produto 1">
+                <h3 class="prod__texto">Cuidados com a pele</h3>
+                <button class="botao2">Cuidando da pele de forma radiante, nutrindo com orgulho a beleza
+                    interior.</button>
+            </div>
+            <div class="produto">
+                <img src="img/blog image2.png" alt="Produto 2">
+                <h3 class="prod__texto">Seu perfume ideal</h3>
+                <button class="botao2">O cheiro do perfume fala sobre a personalidade de uma pessoa. Como é a
+                    sua?</button>
+            </div>
+            <div class="produto">
+                <img src="img/blog image3.png" alt="Produto 3">
+                <h3 class="prod__texto">Cuidados no banho</h3>
+                <button class="botao2">A hidratação corporal pode começar no banho! Saiba como manter a pele saudável
+                    integrando esse cuidado.</button>
+            </div>
+    </div>
+
+    <div class="quiz-container">
+        <h2>Quiz: Qual a melhor Base para a Sua Pele?</h2>
+        <div id="question-container">
+            <p id="question-text">Pergunta 1: Qual é o seu tipo de pele?</p>
+            <div class="options">
+                <input type="radio" id="option1" name="answer" value="seca">
+                <label for="option1">Pele Seca</label><br>
+                <input type="radio" id="option2" name="answer" value="oleosa">
+                <label for="option2">Pele Oleosa</label><br>
+                <input type="radio" id="option2" name="answer" value="oleosa">
+                <label for="option2">Pele Mista</label><br>
+                <input type="radio" id="option2" name="answer" value="oleosa">
+                <label for="option2">Pele Sensível</label><br>
+            </div>
+        </div>
+        <button id="submit-btn" class="botao_quiz">Próxima Pergunta</button>
+        <div id="result-container"></div>
+    </div>
+
+    <div class="container">
+        <h2 class="texto__topicos">Nossos canais de vendas:</h2>
+        <section id="destaques">
+            <div class="produto">
+                <img src="img/footerimg1.png" alt="Loja">
+                <button class="botao4">Compre pelo site ou app e escolha a loja para retirar seu produto!</button>
+            </div>
+            <div class="produto">
+                <img src="img/footerimg2.png" alt="Whatsapp">
+                <button class="botao4">Se preferir, chame no Whatsapp e fale com uma atendente!</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/ana-flavia-016413233/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/AnaFlaviaR" target="_blank">GitHub</a>
+        </div>
+        <div>
+            <p>Site produzido sem fins comerciais. Ana Flavia S R.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
